@@ -15,12 +15,23 @@
 </head>
 
 <body>
-
-	<header class="pagetop">
-		<h1><a href="{PHP.cfg.mainurl}" title="{PHP.cfg.maintitle} {PHP.cfg.separator} {PHP.cfg.subtitle}">{PHP.cfg.maintitle}</a></h1>
-		<p class="small subtitle">{PHP.cfg.subtitle}</p>
-		<nav id="topnav">
-			<ul id="nav" class="body">
+<div class="navbar navbar-static-top">
+  <div class="navbar-inner">
+	<div class="container">
+	  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </a>
+	  <a class="brand" href="{PHP.cfg.mainurl}" title="{PHP.cfg.maintitle} {PHP.cfg.separator} {PHP.cfg.subtitle}">{PHP.cfg.maintitle}<span>{PHP.cfg.subtitle}</span></a>
+	  <form id="search" class="navbar-search pull-right" action="{PHP|cot_url('plug','e=search')}" method="post">
+			<p>
+				<input type="text" name="sq" value="{PHP.L.Search}..." onblur="if(this.value=='') this.value='{PHP.L.Search}...';" onfocus="if(this.value=='{PHP.L.Search}...') this.value='';" />
+				<button type="submit" title="{PHP.L.Search}!">{PHP.L.Search}</button>
+			</p>
+		</form>
+		<nav id="topnav" class="nav-collapse collapse">
+			<ul class="nav" class="body">
 				<li>
 					<a href="{PHP.cfg.mainurl}" title="{PHP.L.Home}">
 						{PHP.L.Home}
@@ -50,7 +61,12 @@
 				</li>
 				<!-- ENDIF -->
 			</ul>
-		</nav>
+		</nav><!--/.nav-collapse -->
+	</div>
+  </div>
+</div>
+	<header class="pagetop">
+		
 	</header>
 
 	
@@ -60,6 +76,6 @@
 	</div>
 	<!-- ENDIF -->
 
-	<section id="main" class="body clearfix">
+	<section id="main">
 
 <!-- END: HEADER -->

@@ -55,15 +55,6 @@
 <!-- Thanks! -->
 	</footer> <!-- end page footer -->
 
-	<!-- IF {PHP.cot_plugins_active.search} -->
-	<div id="magnifier">
-		<form id="search" action="{PHP|cot_url('plug','e=search')}" method="post">
-			<p>
-				<input type="text" name="sq" value="{PHP.L.Search}..." onblur="if(this.value=='') this.value='{PHP.L.Search}...';" onfocus="if(this.value=='{PHP.L.Search}...') this.value='';" />
-				<button type="submit" title="{PHP.L.Search}!">{PHP.L.Search}</button>
-			</p>
-		</form>
-	</div>
 	<!-- ENDIF -->
 
 {FOOTER_RC}
