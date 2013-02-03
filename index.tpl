@@ -1,5 +1,5 @@
 <!-- BEGIN: MAIN -->
-		<div id="homenews">
+		<div id="homenews" class="span8 pull-left">
 			<!-- IF {INDEX_NEWS} -->
 			<section>
 				<h2 class="news">{PHP.L.News}</h2>
@@ -8,7 +8,7 @@
 			<!-- ENDIF -->
 		</div>
 
-		<aside id="page-sidebar" class="col3-1">
+		<aside id="page-sidebar" class="span3 pull-right">
 			<!-- IF {PHP.usr.isadmin} -->
 			<div class="block">
 				<h2 class="admin">{PHP.L.Admin}</h2>

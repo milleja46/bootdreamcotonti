@@ -1,9 +1,10 @@
 <!-- BEGIN: FOOTER -->
-
+</div>
+<div id="push"></div>
 	</section>
 
-	<footer class="body clear">
-		<div class="col4-1">
+	<footer><div class="container">
+		<div class="span3">
 			<ul class="block">
 				<li><strong>Stay tuned!</strong></li>
 				<!-- IF {PHP.cot_modules.rss} -->
@@ -15,7 +16,7 @@
 				<li class=""><a href="http://www.seditio.by" title="Free and Commercial Cotonti Themes and Plugins">Nemesis Theme by Seditio.by</a></li>
 			</ul>
 		</div>
-		<div class="col4-1">
+		<div class="span3">
 			<ul class="block">
 				<li><strong>{PHP.L.Navigation}</strong></li>
 				<li><a href="{PHP.cfg.mainurl}" title="{PHP.L.Home}">{PHP.L.Home}</a></li>
@@ -26,7 +27,7 @@
 				<li><a href="{PHP|cot_url('users')}" title="{PHP.L.Users}">{PHP.L.Users}</a></li>
 			</ul>
 		</div>
-		<div class="col4-2">
+		<div class="span3">
 		<ul id="account" class="block">
 <!-- BEGIN: GUEST -->
 			<li><strong>{PHP.L.hea_youarenotlogged}</strong></li>
@@ -53,7 +54,7 @@
 		</div>
 		<hr />
 <!-- Thanks! -->
-	</footer> <!-- end page footer -->
+	</div></footer> <!-- end page footer -->
 
 	<!-- ENDIF -->
 

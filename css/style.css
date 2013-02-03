@@ -1,15 +1,42 @@
+html,body{
+	height:100%;
+}
 body{
 	background: rgb(236,236,237);
 }
 nav#topnav.nav-collapse.collapse ul.nav li{
 	
 }
-nav#topnav.nav-collapse.collapse ul.nav				      { line-height:100%; overflow:auto; }
-nav#topnav.nav-collapse.collapse ul.nav li				  { border-right:1px solid #f8f8f8; float:left; }
-nav#topnav.nav-collapse.collapse ul.nav li a			  { text-shadow:0 1px 0 #fff; padding:10px 20px; display:block;text-align:center }
-nav#topnav.nav-collapse.collapse ul.nav li a:hover		  { color:#fff; text-decoration:none; text-shadow:0 -1px 0 #000; }
-nav#topnav.nav-collapse.collapse ul.nav li a span		  { color:#999; font-size:.9em; text-transform:lowercase; display:block;text-align:center; }
-nav#topnav.nav-collapse.collapse ul.nav li a:hover span   { color:#ccc; }
+nav#topnav.nav-collapse.collapse ul.nav	{
+	line-height:100%;
+	overflow:auto; 
+ }
+nav#topnav.nav-collapse.collapse ul.nav li {
+	border-right:1px solid #f8f8f8;
+	float:left;
+}
+nav#topnav.nav-collapse.collapse ul.nav li a {
+	text-shadow:0 1px 0 #fff;
+	padding:10px 20px;
+	display:block;
+	text-align:center
+}
+nav#topnav.nav-collapse.collapse ul.nav li a:hover {
+	color:#fff;
+	text-decoration:none;
+	text-shadow:0 -1px 0 #000;
+}
+nav#topnav.nav-collapse.collapse ul.nav li a span {
+	color:#999;
+	font-size:.9em;
+	text-transform:lowercase;
+	display:block;
+	text-align:center;
+}
+
+nav#topnav.nav-collapse.collapse ul.nav li a:hover span {
+	color:#ccc;
+}
 
 a.brand{
 	font-size:2em;
@@ -22,4 +49,51 @@ a.brand span{
 	color:black;
 	margin-left: 10px;
 	font-size:.5em;
+}
+#slider{
+	width:70%;
+	margin: 10px auto;
+}
+#slider img{
+	width:100%;
+	margin: 0 auto;
+}
+section#main{
+	min-height:100%;
+	height:auto !important;
+	height: 100%;
+	margin: 0 auto -190px;
+}
+#homenews{
+	background:rgb(220,220,218);
+	-moz-box-shadow: inset -2px -2px rgb(230,230,230);
+	-webkit-box-shadow: inset -2px -2px rgb(230,230,230);
+	box-shadow: inset -2px -2px rgb(230,230,230);
+	-moz-border-radius: 10px 10px;
+	-webkit-border-radius: 10px 10px;
+	border-radius: 10px 10px;
+	border: 1px solid rgba(10,10,11,0.5);
+	padding: 20px;
+}
+#push, footer{
+	height:190px;
+}
+footer{
+	background:rgb(150,150,151);
+}
+footer ul li{
+	list-style:none;
+	padding:2px
+}
+footer .span3{
+	text-align:left;
+}
+@media (max-width){
+	footer{
+		height:100%;
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left:20px;
+		padding-right:20px;
+	}
 }

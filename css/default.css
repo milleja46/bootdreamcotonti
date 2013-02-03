@@ -225,3 +225,6 @@ ul.bullets li			{ padding-left:25px; background:url(../img/bullets.png) no-repea
 ol					{ margin-left:20px; list-style-type:decimal; }
 
 #usergrouplist ul li:first-child a	{ color:#900; }
+li {
+	list-style:none;
+}
