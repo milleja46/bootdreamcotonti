@@ -52,7 +52,7 @@
 				</ul>
 			</div>
 <!-- END: PAGE_ADMIN -->
-			{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/inc/contact.tpl"}
+			{FILE "{PHP.cfg.themes_dir}/{PHP.theme}/plugins/contact/contact.tpl"}
 <!-- BEGIN: PAGE_MULTI -->
 			<div class="block">
 				<h2 class="info">{PHP.L.Summary}:</h2>
