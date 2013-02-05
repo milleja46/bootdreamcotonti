@@ -1,15 +1,23 @@
 <!-- BEGIN: MAIN -->
-		<div id="homenews" class="span8 pull-left">
-			<!-- IF {INDEX_NEWS} -->
-			<section>
-				<h2 class="news">{PHP.L.News}</h2>
-				{INDEX_NEWS}
-			</section>
-			<!-- ENDIF -->
+		
+		<!-- IF {INDEX_NEWS} -->
+		<section class="cont span4 pull-left">
+			<h2 class="news">{PHP.L.News}</h2>
+			{INDEX_NEWS}
+		</section>
+		<!-- ENDIF -->
+		
+		<div class="cont span4">
+			Sample Content for this area
 		</div>
-
-		<aside id="page-sidebar" class="span3 pull-right">
+		<aside id="page-sidebar" class="cont span3 pull-right">
 			<!-- IF {PHP.usr.isadmin} -->
+			<form id="search" class="navbar-search" action="{PHP|cot_url('plug','e=search')}" method="post">
+				<p>
+					<input type="text" name="sq" value="{PHP.L.Search}..." onblur="if(this.value=='') this.value='{PHP.L.Search}...';" onfocus="if(this.value=='{PHP.L.Search}...') this.value='';" />
+					<button type="submit" title="{PHP.L.Search}!">{PHP.L.Search}</button>
+				</p>
+			</form>
 			<div class="block">
 				<h2 class="admin">{PHP.L.Admin}</h2>
 				<ul class="bullets">

@@ -21,8 +21,6 @@
 		{HEADER_HEAD}
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -43,13 +41,6 @@
 			{PHP.cfg.subtitle}
 			</small>
 			</a>
-			
-		  <form id="search" class="navbar-search pull-right" action="{PHP|cot_url('plug','e=search')}" method="post">
-				<p>
-					<input type="text" name="sq" value="{PHP.L.Search}..." onblur="if(this.value=='') this.value='{PHP.L.Search}...';" onfocus="if(this.value=='{PHP.L.Search}...') this.value='';" />
-					<button type="submit" title="{PHP.L.Search}!">{PHP.L.Search}</button>
-				</p>
-			</form>
 			<nav id="topnav" class="nav-collapse collapse">
 				<ul class="nav" class="body">
 					{HEADER_BANNER}
@@ -109,9 +100,11 @@
 			<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 		</div>
+	<!-- ELSE -->
+	PAGE AVATAR HERE
 	<!-- ENDIF -->
 </header>
-		
-		<div id="maincont" class="container">
+		<section id="maincont">
+		<div class="container">
 			<div class="row">
 			<!-- END: HEADER -->

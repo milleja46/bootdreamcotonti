@@ -1,11 +1,11 @@
 <!-- BEGIN: MAIN -->
 
-		<div class="block">
+		<section class="span10 offset1">
 			<h2 class="forums">{FORUMS_EDITPOST_PAGETITLE}</h2>
 			<!-- IF {FORUMS_EDITPOST_SUBTITLE} --><p class="marginbottom10 small">{FORUMS_EDITPOST_SUBTITLE}</p><!-- ENDIF -->
 			{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 			<form action="{FORUMS_EDITPOST_SEND}" method="post" name="editpost">
-				<table class="cells">
+				<table class="table table-striped">
 					<!-- BEGIN: FORUMS_EDITPOST_FIRSTPOST -->
 					<tr>
 						<td class="width20">{PHP.L.forums_topic}:</td>
@@ -70,6 +70,6 @@
 					</tr>
 				</table>
 			</form>
-		</div>
+		</section>
 
 <!-- END: MAIN -->

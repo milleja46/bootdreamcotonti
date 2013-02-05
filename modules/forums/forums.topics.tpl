@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
 
-		<div class="block">
+		<section class="span10 offset1">
 			<h2 class="forums">{FORUMS_TOPICS_PAGETITLE}</h2>
 <!-- BEGIN: FORUMS_SECTIONS -->
-			<table class="cells">
+			<table class="table">
 				<tr>
 					<td class="coltop width5"></td>
 					<td class="coltop width45">{PHP.L.Subforums}</td>
@@ -42,7 +42,7 @@
 				<!-- END: FORUMS_SECTIONS_POLLS -->
 			</ul>
 
-			<table class="cells">
+			<table class="table table-striped">
 				<tr>
 					<td class="coltop width5"></td>
 					<td class="coltop width45">{FORUMS_TOPICS_TITLE_TOPICS} / {FORUMS_TOPICS_TITLE_STARTED}</td>
@@ -78,8 +78,10 @@
 				{FORUMS_TOPICS_PAGEPREV}{FORUMS_TOPICS_PAGES}{FORUMS_TOPICS_PAGENEXT}
 			</p>
 
+		</section>
 		</div>
-		<div class="block">
+		<div class="row">
+		<section class="span8 offset2">
 			<h2 class="info">{PHP.L.Help}</h2>
 			<table class="fico small">
 				<tr>
@@ -102,6 +104,6 @@
 					</td>
 				</tr>
 			</table>
+		</section>
 		</div>
-
 <!-- END: MAIN -->

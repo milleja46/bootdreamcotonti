@@ -1,10 +1,10 @@
 <!-- BEGIN: MAIN -->
 
-		<div class="block">
+		<section class="span10 offset1">
 			<h2 class="forums">{FORUMS_NEWTOPIC_PAGETITLE}</h2>
 			{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 			<form action="{FORUMS_NEWTOPIC_SEND}" method="post" name="newtopic">
-				<table class="cells">
+				<table class="table table-striped">
 					<tr>
 						<td class="width20">{PHP.L.Title}:</td>
 						<td class="width80">{FORUMS_NEWTOPIC_TITLE}</td>
@@ -70,6 +70,6 @@
 					</tr>
 				</table>
 			</form>
-		</div>
+		</section>
 
 <!-- END: MAIN -->

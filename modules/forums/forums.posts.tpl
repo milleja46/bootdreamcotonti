@@ -15,7 +15,7 @@
 			<h2 class="forums">{FORUMS_POSTS_PAGETITLE}</h2>
 <!-- BEGIN: FORUMS_POSTS_ADMIN -->
 			<form id="movetopic" action="{FORUMS_POSTS_MOVE_URL}" method="post" class="marginbottom10">
-				<table class="flat">
+				<table class="table table-striped">
 					<tr>
 						<td class="textright width10">{PHP.L.forums_topicoptions}:</td>
 						<td class="width90">

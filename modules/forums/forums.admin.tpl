@@ -8,9 +8,9 @@
 
 		</div>
 		
-		<div class="block">
+		<div class="cont">
 		<h3>{PHP.L.Statistics}</h3>
-			<table class="cells">
+			<table class="table table-striped">
 				<tr>
 					<td>{PHP.L.forums_topics}:</td>
 					<td class="centerall">{ADMIN_FORUMS_TOTALTOPICS}</td>
@@ -28,7 +28,7 @@
 
 		<div class="block">
 			<h3>{PHP.L.home_newtopics}</h3>
-			<table class="cells">
+			<table class="table">
 <!-- BEGIN: ADMIN_FORUMS_ROW_USER -->
 				<tr>
 					<td class="centerall width5">{ADMIN_FORUMS_ROW_II}.</td>

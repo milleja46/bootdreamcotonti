@@ -1,9 +1,9 @@
 <!-- BEGIN: MAIN -->
 
-		<div class="block">
+		<section class="span10 offset1">
 			<h2 class="forums">{FORUMS_SECTIONS_PAGETITLE}</h2>
-<!-- BEGIN: FORUMS_SECTIONS -->
-			<table class="cells">
+			<!-- BEGIN: FORUMS_SECTIONS -->
+			<table class="table table-striped">
 				<thead>
 					<tr>
 						<td class="coltop" class="width10">&nbsp;</td>
@@ -16,7 +16,7 @@
 						<td class="coltop" class="width10">{PHP.L.Activity}</td>
 					</tr>
 				</thead>
-<!-- BEGIN: CAT -->
+				<!-- BEGIN: CAT -->
 				<tbody id="{FORUMS_SECTIONS_ROW_CAT}">
 					<tr>
 						<td class="forumssection" colspan="6">
@@ -25,7 +25,7 @@
 					</tr>
 				</tbody>
 				<tbody id="blk_{FORUMS_SECTIONS_ROW_CAT}"<!-- IF {FORUMS_SECTIONS_ROW_FOLD} --> style="display:none;"<!-- ENDIF -->>
-<!-- BEGIN: SECTION -->
+					<!-- BEGIN: SECTION -->
 					<tr>
 						<td class="centerall">
 							{FORUMS_SECTIONS_ROW_ICON}
@@ -36,9 +36,9 @@
 							<p class="small">{FORUMS_SECTIONS_ROW_DESC}</p>
 							<!-- ENDIF -->
 							<ul class="subforums">
-<!-- BEGIN: SUBSECTION -->
+							<!-- BEGIN: SUBSECTION -->
 								<li>{PHP.R.forums_icon_subforum}<a href="{FORUMS_SECTIONS_ROW_URL}">{FORUMS_SECTIONS_ROW_TITLE}</a></li>
-<!-- END: SUBSECTION -->
+							<!-- END: SUBSECTION -->
 							</ul>
 						</td>
 						<td class="centerall">
@@ -49,16 +49,18 @@
 						<td class="centerall">{FORUMS_SECTIONS_ROW_POSTCOUNT}</td>
 						<td class="centerall">{FORUMS_SECTIONS_ROW_ACTIVITY}</td>
 					</tr>
-<!-- END: SECTION -->
+					<!-- END: SECTION -->
 				</tbody>
 			<!-- END: CAT -->
 			</table>
-<!-- END: FORUMS_SECTIONS -->
+	<!-- END: FORUMS_SECTIONS -->
 			<p class="paging"><span><a href="{PHP|cot_url('plug','e=search&amp;tab=frm')}">{PHP.L.forums_searchinforums}</a></span><span><a href="{PHP|cot_url('plug','e=forumstats')}">{PHP.L.Statistics}</a></span><span><a href="{PHP|cot_url('forums','n=markall')}" rel="nofollow">{PHP.L.forums_markasread}</a></span></p>
+		</section>
 		</div>
-		<div class="block">
+		<div class="row">
+		<section class="span10 offset1">
 			<h2 class="tags">{PHP.L.Tags}</h2>
 			{FORUMS_SECTIONS_TAG_CLOUD}
-		</div>
+		</section>
 
 <!-- END: MAIN -->

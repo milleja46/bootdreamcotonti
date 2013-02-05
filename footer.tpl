@@ -2,6 +2,7 @@
 			</div>
 			<div id="push"></div>
 		</div>
+		</section>
 		
 		<footer>
 			<div class="container">
